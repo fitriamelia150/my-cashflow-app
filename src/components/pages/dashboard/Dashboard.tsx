@@ -1,10 +1,10 @@
-import Form from "@/components/fragments/Form";
+import FormTransaction from "@/components/fragments/FormTransaction";
 import ListTransactions from "@/components/fragments/ListTransactions";
 
 export default function Dashboard() {
     return(
         <>
-            <Form/>
+            <FormTransaction/>
             <ListTransactions/>
         </>
     )

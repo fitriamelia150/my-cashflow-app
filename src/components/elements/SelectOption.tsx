@@ -5,7 +5,7 @@ interface SelectProps extends React.ComponentPropsWithoutRef<'select'>{
 export default function SelectOption({dataList, ...props}: SelectProps){
     return(
         <div className="flex flex-col gap-2">
-            <label htmlFor={props.name}>{props.name}</label>
+            <label htmlFor={props.name} className="text-sm">{props.name}</label>
 
             <select name={props.name} id={props.id} className={props.className} onChange={props.onChange}>
                 {dataList.length > 0 &&

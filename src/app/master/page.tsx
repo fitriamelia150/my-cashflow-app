@@ -1,5 +1,7 @@
+import Master from "@/components/pages/master/Master";
+
 export default function MasterPage () {
     return (
-        <h1>master page</h1>
+        <Master/>
     )
 }

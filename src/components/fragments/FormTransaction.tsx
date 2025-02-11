@@ -5,7 +5,7 @@ import Button from "../elements/Button";
 import Input from "../elements/Input";
 import SelectOption from "../elements/SelectOption";
 
-export default function Form(){
+export default function FormTransaction(){
     const [trxDate, setTrxDate] = useState('')
     const [trxBankFrom, setTrxBankFrom] = useState('')
     const [trxType, setTrxType] = useState('')
