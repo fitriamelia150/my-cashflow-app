@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Navigation/>
         <Sidebar/>
-        <main className="absolute top-0 left-0 pl-20 py-[4rem] w-full h-full bg-slate-100 text-slate-800">{children}</main>
+        <main className="absolute top-0 left-0 pl-32 py-[6rem] w-full h-full bg-white text-slate-800">{children}</main>
       </body>
     </html>
   );

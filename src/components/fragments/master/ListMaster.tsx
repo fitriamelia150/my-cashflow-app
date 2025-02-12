@@ -12,8 +12,8 @@ const getMaster = async (par: string) => {
         
         if (res.ok) {
             const json = await res.json();
-            // console.log(json); // Log the response body
-            return json.data_master || [];
+            console.log(json); // Log the response body
+            return json.data || [];
 
         } else {
             console.error("Failed to fetch data. Status:", res.status);
@@ -28,6 +28,7 @@ const getMaster = async (par: string) => {
 const ListMaster: React.FC<ListMasterProps> = async ({props}) => {
 
     const datas = await getMaster(props);
+    // const datas[] = string [];
 
     return(
         <div className="w-full rounded-md p-5 border-[1px]">

@@ -1,13 +1,12 @@
 import Card from "@/components/elements/Card";
 import InputDataMaster from "@/components/fragments/master/InputMaster";
-import ListMaster from "@/components/fragments/master/ListMasterBank";
-import Listbank from "@/components/fragments/master/ListMasterBank";
+import ListMaster from "@/components/fragments/master/ListMaster";
 
 
 export default function Master(){
 
     return (
-        <div className="bg-white pl-10 pt-10 pb-10">
+        <div className="">
             <h1 className="text-xl font-semibold mb-10">Settings</h1>
 
             <div className="flex gap-5 items-start">

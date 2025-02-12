@@ -5,9 +5,9 @@ const prisma = new PrismaClient();
 
 export const GET = async (req: NextRequest) => {
     try {
-        const data_bank = await prisma.tbl_master_bank.findMany();
+        const data = await prisma.tbl_master_bank.findMany();
 
-        const res = NextResponse.json({ data_bank });
+        const res = NextResponse.json({ data });
         res.headers.set('Access-Control-Allow-Origin', '*'); // Allow all origins
         res.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
         
