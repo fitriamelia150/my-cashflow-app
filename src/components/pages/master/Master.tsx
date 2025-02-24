@@ -1,6 +1,7 @@
 import Card from "@/components/elements/Card";
 import InputDataMaster from "@/components/fragments/master/InputMaster";
-import ListMaster from "@/components/fragments/master/ListMaster";
+// import ListMaster from "@/components/fragments/master/ListMaster";
+import ListMaster from "@/components/fragments/master/ListMasterBank";
 
 
 export default function Master(){

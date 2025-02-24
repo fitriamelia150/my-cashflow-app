@@ -5,14 +5,14 @@ interface ListMasterProps {
 }
 
 const getMaster = async (par: string) => {
-    console.log('getMaster ', par)
+    // console.log('getMaster ', par)
 
     try {
         const res = await fetch(process.env.BASE_URL+'/api/master/'+par);
         
         if (res.ok) {
             const json = await res.json();
-            console.log(json); // Log the response body
+            // console.log('getMaster',json); // Log the response body
             return json.data || [];
 
         } else {
@@ -28,7 +28,6 @@ const getMaster = async (par: string) => {
 const ListMaster: React.FC<ListMasterProps> = async ({props}) => {
 
     const datas = await getMaster(props);
-    // const datas[] = string [];
 
     return(
         <div className="w-full rounded-md p-5 border-[1px]">

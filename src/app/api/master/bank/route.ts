@@ -10,6 +10,8 @@ export const GET = async (req: NextRequest) => {
         const res = NextResponse.json({ data });
         res.headers.set('Access-Control-Allow-Origin', '*'); // Allow all origins
         res.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+
+        console.log('res API: ',res)
         
         return res;
         
